@@ -1,0 +1,46 @@
+Student Details: /addStudent
+
+student_name:
+student_id:
+phone_number:
+branch:
+year:
+email:
+password:
+
+Student subjects: /addSubjectTeacher
+
+student_id:
+student_name:
+subject1_name:
+subject2_name:
+subject3_name:
+subject4_name:
+subject5_name:
+
+Teacher details: /addTeacher
+
+teacher_name:
+employee_id:
+subject:
+phone_number:
+branch:
+year:
+email:
+password:
+
+marks entry: /addMarks
+
+student_id:
+student_name:
+student_email:
+subject1_marks:
+subject2_marks:
+subject3_marks:
+subject4_marks:
+subject5_marks:
+
+/studentLogin = email, password
+/teacherLogin = email, password
+
+/getMarks = param: student_email

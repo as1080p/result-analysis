@@ -1,0 +1,33 @@
+{
+  "name": "result-analysis",
+  "version": "1.0.0",
+  "description": "provides a user friendly interface for students to view an analysis of their marks as well as allow teachers to enter marks",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/as1080p/result-analysis.git"
+  },
+  "author": "anagha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/as1080p/result-analysis/issues"
+  },
+  "homepage": "https://github.com/as1080p/result-analysis#readme",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongodb": "^6.8.0",
+    "mongoose": "^8.4.4"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  }
+}
