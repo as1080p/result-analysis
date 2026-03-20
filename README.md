@@ -63,35 +63,65 @@ A full-stack web application that allows students to view their academic perform
 📁 Project Structure
 --------------------
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   result-analysis/│├── Backend/│   ├── models/│   ├── routes/│   ├── services/│   ├── server.js│   └── package.json│├── Frontend/│   ├── src/│   │   ├── Components/│   │   ├── Pages/│   │   ├── axios.js│   │   └── App.js│   └── package.json│└── README.md   `
+```plaintext
+result-analysis/
+│
+├── Backend/
+│   ├── models/
+│   ├── routes/
+│   ├── services/
+│   ├── server.js
+│   └── package.json
+│
+├── Frontend/
+│   ├── src/
+│   │   ├── Components/
+│   │   ├── Pages/
+│   │   ├── axios.js
+│   │   └── App.js
+│   └── package.json
+│
+└── README.md
+```
 
 ⚙️ Installation & Setup
 -----------------------
 
 ### 1️⃣ Clone the repository
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   git clone cd result-analysis   `
+git clone <your-repo-link>
+cd result-analysis
 
 ### 2️⃣ Backend Setup
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   cd Backendnpm install   `
+cd Backend
+npm install
 
 Create a .env file:
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   PORT=5000MONGO_URI=your_mongodb_connection_string   `
+cd Backend
+npm install
 
 Run backend:
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   npm start   `
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
 
 ### 3️⃣ Frontend Setup
 
-Plain textANTLR4BashCC#CSSCoffeeScriptCMakeDartDjangoDockerEJSErlangGitGoGraphQLGroovyHTMLJavaJavaScriptJSONJSXKotlinLaTeXLessLuaMakefileMarkdownMATLABMarkupObjective-CPerlPHPPowerShell.propertiesProtocol BuffersPythonRRubySass (Sass)Sass (Scss)SchemeSQLShellSwiftSVGTSXTypeScriptWebAssemblyYAMLXML`   cd Frontendnpm installnpm start   `
+npm start
 
 🔗 API Endpoints
 ----------------
+```plaintext
+Method Endpoint                          Description
 
-MethodEndpointDescriptionPOST/api/studentLoginStudent loginPOST/api/teacherLoginTeacher loginPOST/api/addMarksAdd marksGET/api/getMarks?student\_email=EMAILFetch marks
+POST   /api/studentLogin                 Student login
+POST   /api/teacherLogin                 Teacher login
+POST   /api/addMarks                     Add marks
+GET    /api/getMarks?student_email=EMAIL Fetch marks
+
+```
 
 📈 Marks Analysis Logic
 -----------------------
@@ -102,7 +132,7 @@ MethodEndpointDescriptionPOST/api/studentLoginStudent loginPOST/api/teacherLogin
     
 *   **Fail Criteria:** < 32 marks in any subject
     
-*   pointer = (average / 80) \* 10
+*   pointer = (average / 80) * 10
     
 *   **Overall Result:**
     
